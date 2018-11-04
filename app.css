@@ -1,0 +1,192 @@
+/*Load the fonts*/
+@font-face {
+    font-family:"Roboto";
+    src: url(dependencies/google-fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family:"Roboto Slab";
+    src: url(dependencies/google-fonts/RobotoSlab-Regular.ttf);
+}
+/*General tag styling*/
+* {
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	font-size:16px;
+	font-family:"Roboto", sans-serif;
+}
+html, body, .wdw {
+	width:100vw;
+	height:100vh;
+}
+h1 {font-size:160%;}
+h2 {font-size:145%;}
+h3 {font-size:130%;}
+h4 {font-size:115%;}
+h5 {font-size:100%;}
+h6 {font-size:85%;}
+h1, h2, h3, h4, h5, h6 {
+	font-family:"Roboto Slab", serif;
+}
+input, button, select {
+	width:100%;
+	height:50px;
+	padding:5px;
+	font-size:24px;
+	outline:none;
+	border:1px solid #E65100;
+}
+button {
+	cursor:pointer;
+	background:#FFA726;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+    line-height:24px;
+    width:95vw;
+}
+table td {
+	padding:5px;
+}
+table tr:nth-of-type(1) {
+	font-weight:bold;
+}
+table tr:nth-of-type(odd) {
+	background:#FFA726;
+}
+table tr:nth-of-type(even) {
+	background:#FFCC80;
+}
+
+/*Window setup css*/
+#wdw-setup,
+#wdw-create-user,
+#wdw-welcome,
+#wdw-properties {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#box-setup {
+	width:350px;
+	border:1px solid #E65100;
+	text-align: center;
+	padding:5px;
+	background:#FFB74D;
+}
+#box-setup input:not(:first-child),
+#box-setup button:not(:first-child),
+#box-setup select:not(:first-child) {
+	margin-top:5px;
+}
+/*Window create user css*/
+#wdw-create-user {
+	align-content: center;
+	align-self: center;
+}
+/*Menu css*/
+#menu {
+	height:50px;
+	display:flex;
+	border-bottom:1px solid #E65100;
+	background:#FFB74D;
+	width:100vw;
+	margin-bottom:25px;
+	justify-content: flex-end;
+	align-items: center;
+}
+#menu > .link {
+	font-size:24px;
+	margin-right:15px;
+	cursor:pointer;
+	line-height:50px;
+	padding:0 5px 0 5px;
+}
+#menu > .no-margin {
+	margin-right:0px;
+}
+.fa-trash, .fa-edit,
+.fa-close, .fa-save,
+#close, .fa-mail-forward {
+	cursor:pointer;
+}
+.fa-home, .fa-building {
+	margin-right:5px;
+}
+.fa-green {
+	color:#388E3C;
+}
+.fa-red {
+	color:red;
+}
+#error {
+	margin-top:5px;
+	margin-bottom:2px;
+	display:none;
+	color:red;
+	line-height:25px;
+	text-align:center;
+}
+.view-property {
+	cursor:pointer;
+}
+.map {
+	display:table;
+	width:90vw;
+	height:90vh;
+	border:1px solid #E65100;
+	margin:0 auto;
+}
+.data {
+	display:table;
+	width:90vw;
+	margin:0 auto;
+	font-size:22pt;
+}
+#mail-form {
+	display:none;
+	position:absolute;
+	top:150px;
+	left:5vw;
+	width:90vw;
+	background:#FFA726;
+	border:1px solid #E65100;
+	padding:5px;
+	overflow:hidden;
+	display:none;
+}
+#mail-form > textarea {
+	width:100%;
+	height:25vh;
+	border:none;
+	outline:none;
+	margin-top:5px;
+	border:1px solid #E65100;
+	padding:5px;
+}
+#mail-form > h3 {
+	display:block;
+	width:100%;
+	padding:5px;
+	margin:0;
+	background:#FFA726;
+}
+#mail-form > #mail-buttons {
+	display:table;
+	width:100%;
+}
+#mail-form > #mail-buttons > button {
+	width:35%;
+}
+#cancel-mail {
+	float:right;
+}
+#images {
+	width:90vw;
+	height:90vh;
+	margin:0 auto;
+}
+#images > img {
+	width:30%;
+}
